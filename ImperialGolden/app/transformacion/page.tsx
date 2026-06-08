@@ -12,7 +12,6 @@ import {
   MoreHorizontal,
   Home,
   Search,
-  Glasses,
 } from "lucide-react"
 
 const phases = [
@@ -123,10 +122,10 @@ function BottomInfo() {
   return (
     <div className="absolute bottom-[60px] left-0 right-0 z-20 px-3 pb-3">
       <div className="flex items-center gap-2 mb-2">
-        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center overflow-hidden">
-          <Image src="/igs-logo.png" alt="Perfil" width={32} height={32} className="object-cover" />
+        <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center overflow-hidden">
+          <Image src="/igs-logo.jpeg" alt="Imperial Golden Store" width={32} height={32} className="object-cover" />
         </div>
-        <span className="text-white text-sm font-semibold">keno.rdz and jesyy.ai</span>
+        <span className="text-white text-sm font-semibold">Imperial Golden Store</span>
         <button
           onClick={(e) => {
             e.stopPropagation()
@@ -136,11 +135,6 @@ function BottomInfo() {
         >
           {following ? "Following" : "Follow"}
         </button>
-      </div>
-
-      <div className="flex items-center gap-1.5 mb-2">
-        <Glasses className="w-4 h-4 text-white/80" />
-        <span className="text-white/80 text-xs">Ray-Ban Meta glasses</span>
       </div>
 
       <p className="text-white text-sm pr-12 leading-relaxed">No es por gusto, es puro estilo</p>
@@ -160,8 +154,8 @@ function BottomNav() {
         <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-red-500" />
       </div>
       <Search className="w-7 h-7 text-white" strokeWidth={2} />
-      <div className="w-7 h-7 rounded-md bg-zinc-500 overflow-hidden">
-        <Image src="/placeholder-user.jpg" alt="Tu perfil" width={28} height={28} className="object-cover" />
+      <div className="w-7 h-7 rounded-md bg-white overflow-hidden">
+        <Image src="/igs-logo.jpeg" alt="Imperial Golden Store" width={28} height={28} className="object-cover" />
       </div>
     </div>
   )
